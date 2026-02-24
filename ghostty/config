@@ -1,10 +1,34 @@
 font-family = "Hack"
-font-size = 10
+font-size = 9
 
 theme = nova
+
+macos-option-as-alt = left
 
 keybind = alt+b=esc:b
 keybind = alt+f=esc:f
 keybind = alt+d=esc:d
 keybind = ctrl+backspace=text:\x17
 keybind = super+backspace=text:\x15
+
+
+
+# Map Cmd+<key> to unique escape sequences for TUI Emacs
+keybind = super+a=esc:[1;8a
+# keybind = super+v=esc:[1;8v
+keybind = super+c=esc:[1;8c
+keybind = super+x=esc:[1;8x
+keybind = super+k=esc:[1;8k
+keybind = super+s=esc:[1;8s
+keybind = super+l=esc:[1;8l
+keybind = super+w=esc:[1;8w
+keybind = super+z=esc:[1;8z
+keybind = super+q=esc:[1;8q
+
+
+keybind = ctrl+shift+e=text:\x1bZe
+keybind = ctrl+shift+n=text:\x1bZn
+keybind = ctrl+shift+p=text:\x1bZp
+keybind = ctrl+shift+a=text:\x1bZa
+keybind = ctrl+shift+f=text:\x1bZf
+keybind = ctrl+shift+b=text:\x1bZb
