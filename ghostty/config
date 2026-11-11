@@ -1,7 +1,9 @@
-font-family = "Hack"
+font-family = "Isoveka Term"
 font-size = 9
 
 theme = nova
+
+auto-update-channel = tip
 
 macos-option-as-alt = left
 
