@@ -41,7 +41,6 @@ send_bytes("cmd+backspace", "\21")
 
 local command_keys = {
   "a",
-  "c",
   "x",
   "k",
   "s",
@@ -55,8 +54,9 @@ for _, key in ipairs(command_keys) do
   send_bytes("cmd+" .. key, "\27[1;8" .. key)
 end
 
--- Cmd+V was commented out in Ghostty.
--- send_bytes("cmd+v", "\27[1;8v")
+-- macOS clipboard integration
+rex.bind("cmd+c", "pane.copy")
+rex.bind("cmd+v", "pane.paste")
 
 -- ---------------------------------------------------------
 -- Ctrl+Shift shortcuts
